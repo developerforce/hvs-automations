@@ -43,7 +43,8 @@ trigger ActionCadenceTrackerChangeEventTrigger on ActionCadenceTrackerChangeEven
         cadenceEvents.add(cadenceEvent);
       }
     }
-    // Publish the events for Flow or Process Builder to listen to
-    EventBus.publish(cadenceEvents);
   }
+
+  // Publish the events for Flow or Process Builder to listen to
+  EventBus.publish(cadenceEvents);
 }
